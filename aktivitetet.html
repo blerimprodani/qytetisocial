@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aktivitetet</title>
+    <link rel="stylesheet" href="stilim.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="index.html">QYTETI SOCIAL</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="index.html">Kreu</a></li>
+          <li><a href="#femijet">Qyteti i Fëmijëve</a></li>
+          <li><a href="#adoleshent">Qyteti i Adoleshentëve</a></li>
+          <li><a href="#gjyshi">Kafe me Gjyshërit</a></li>
+		  <li><a href="#fotogaleria">Klubi i Librit</a></li>
+          <li><a href="#komente">Të apasionuarit e Sportit</a></li>
+		  
+        </ul>
+      </nav>
+    </header>
+    <section class="njoftime" id="femijet">
+      <h2>Qyteti i Fëmijëve</h2>
+      <p>"Përmes edukimit kulturor të fëmijëve, drejt njohjes së trashëgimisë dhe forcimit të ndërgjegjësimit të përkujdesjes ndaj saj."</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="https://scontent.ftia8-1.fna.fbcdn.net/v/t39.30808-6/434055068_906132078187123_13128950924398499_n.jpg?stp=dst-jpg_p600x600&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LXke0GS9WdMAX_CgKKj&_nc_ht=scontent.ftia8-1.fna&oh=00_AfCVeq3tRWX4HehgWetXtcLaN30HVY-SZpgVzAiqbhNDZA&oe=66059258" alt="img">
+          <h3>Teatri i kukullave</h3>
+          <p>30 Mars, E Shtunë, Ora 10:30 – 11:30.</br>
+31 Mars, E Dielë, Ora 10:30 – 11:30.</br>
+Shfaqja “Djali Miliardier”.</br>
+
+ <span id="dots">...</span><span id="more"> E keni menduar ndonjëherë si do të ishte nëse do të kishit 1 miliard sterlina?
+Njihuni me Xho Pataten, djaloshi që kishte gjithçka, përveç shokëve. A do të ketë ai më në fund një shok të vërtetë? A janë paratë gjëja më e rëndësishme?
+Ejani t'i zbulojmë bashkë. </br>
+Çmimi i biletës: 100 lekë.
+</span></p>
+<button onclick="myFunction()" id="myBtn">Lexo më shumë.</button>
+        </li>
+      </ul>
+    </section>
+	<section class="njoftime" id="adoleshent">
+      <h2>Qyteti i Adoleshentëve</h2>
+      <p>"Rinia, e ardhmja e një kombi, e një shoqërie, e një shteti dhe në duart e tyre do të mbartim përgjegjësitë për të edukuar, zhvilluar e për të çuar përpara shoqërinë."</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="https://scontent.ftia8-1.fna.fbcdn.net/v/t39.30808-6/418830704_17890405796993367_6246364112188663040_n.jpg?stp=dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=fvgg_MGgvF0AX8A9y06&_nc_ht=scontent.ftia8-1.fna&oh=00_AfDo2206iIi1yoLuSJcM2C9kniWc7ZwHLAqwCTrQvHDTng&oe=6604F5E6" alt="img">
+          <h3>Workshop, takim me Adoleshentët</h3>
+          <p>Workshop me temë “Transparenca dhe e drejta për informim në qeverisjen lokale”, pranë Qendrës Rinore Multifunksionale Lushnjë.</br>
+30 Mars, E Shtunë Ora 12:00</br>
+Trajnimi mbështetet nga PVN Albania dhe National Endowment for Democracy.</br>
+</p>
+        </li>
+      </ul>
+    </section>
+	<section class="njoftime" id="gjyshi">
+      <h2>Kafe me Gjyshërit</h2>
+      <p>"Jetë për t'u treguar, arsye për të dialoguar, forcë për të qëndruar."</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="https://i.pinimg.com/originals/5c/00/d8/5c00d8743bc000018b881812eb1185df.jpg" alt="img">
+          <h3>Kafe me gjyshërit</h3>
+        </li>
+      </ul>
+    </section>
+    
+
+    <footer>
+      <div>
+        <span>Copyright © 2024</br>
+		Shkolla "Skënder Libohova"	
+		</span>
+        <span class="link">
+            <a href="#">Kreu</a>
+            <a href="index.html#komente">Komentet</a>
+        </span>
+      </div>
+    </footer>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Lexo më shumë"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Lexo më pak"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+  </body>
+</html>
